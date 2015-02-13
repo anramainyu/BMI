@@ -46,6 +46,8 @@ public class IOSteuerung
             ausgabeGewichtInfo();
         }
     }
+
+
     public void ioGroesse()
     {
         Scanner sc = new Scanner(System.in);
