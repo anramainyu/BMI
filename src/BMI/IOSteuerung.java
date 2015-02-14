@@ -15,6 +15,12 @@ public class IOSteuerung
 
 
     //Ausgaben
+
+    public void bmiUserAusgabe(double bmi)
+    {
+        System.out.println("Der Bmi liegt bei: "+bmi);
+    }
+
     public void ausgabeGewichtInfo()
     {
         System.out.println("Zulässige Werte für das Gewicht sind 25 bis 500" +

@@ -16,10 +16,18 @@ public class Berechnung
 
     public void bmiBerechnen()
     {
-        double gr2;
-        double bmi;
-        gr2=this.gewicht;
-        gr2=gr2*gr2;
-        this.bmi=gr2*this.gewicht;
+
+        // Zentimeter in Meter umrechnen
+        groesse=groesse/100;
+        bmi=gewicht/(groesse*groesse);
     }
+
+
+    public double getBmi()
+    {
+        return bmi;
+    }
+
+
+        
 }

@@ -5,13 +5,18 @@ package BMI;
  */
 public class Main
 {
-    public static void Main(String[] args)
+    public static void main(String[] args)
     {
+        // User Eingabe von Gewicht und Größe
         IOSteuerung steuer1 = new IOSteuerung();
         steuer1.ioGewicht();
         steuer1.ioGroesse();
-
+        //BMI berechnen
         Berechnung bmi = new Berechnung(steuer1.getGewicht(),steuer1.getGroesse());
         bmi.bmiBerechnen();
+        //BMI Ausgeben
+        steuer1.bmiUserAusgabe(bmi.getBmi());
+
+
     }
 }
