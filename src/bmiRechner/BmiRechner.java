@@ -64,50 +64,63 @@ public class BmiRechner
         kategorie();
     }
 
-    private void kategorie()
+    public String kategorie()
     {
         if(bmi<=16.00)
         {
             bmiKategorie="starkes Untergewicht";
-            System.out.println("Mit einem Bmi von: " + (int)bmi + " Haben Sie: "+ bmiKategorie);
+            ausgabe();
+            return bmiKategorie;
+
         }
         else if(bmi>=16.00 && bmi<=16.99)
         {
             bmiKategorie="mäßiges Untergewicht";
-            System.out.println("Mit einem Bmi von: " + (int)bmi + " Haben Sie: "+ bmiKategorie);
+            ausgabe();
+            return bmiKategorie;
+
         }
         else if(bmi>=17.00 && bmi<=18.49)
         {
             bmiKategorie="leichtes Untergewicht";
-            System.out.println("Mit einem Bmi von: " + (int)bmi + " Haben Sie: "+ bmiKategorie);
+            ausgabe();
+            return bmiKategorie;
         }
         else if(bmi>=18.50 && bmi<=24.99)
         {
             bmiKategorie="Normalgewicht";
-            System.out.println("Mit einem Bmi von: " + (int)bmi + " Haben Sie: "+ bmiKategorie);
+            ausgabe();
+            return bmiKategorie;
         }
         else if(bmi>=25.00 && bmi<=29.99)
         {
             bmiKategorie="Prädipositas";
-            System.out.println("Mit einem Bmi von: " + (int)bmi + " Haben Sie: "+ bmiKategorie);
+            ausgabe();
+            return bmiKategorie;
         }
         else if(bmi>=30.00 && bmi<=34.99)
         {
             bmiKategorie="Adipositas Grad I";
-            System.out.println("Mit einem Bmi von: " + (int)bmi + " Haben Sie: "+ bmiKategorie);
+            return bmiKategorie;
         }
         else if(bmi>=35.00 && bmi<=39.99)
         {
             bmiKategorie="Adipositas Grad II";
-            System.out.println("Mit einem Bmi von: " + (int)bmi + " Haben Sie: "+ bmiKategorie);
+            ausgabe();
+            return bmiKategorie;
         }
         else
         {
             bmiKategorie="Adipositas Grad III";
-            System.out.println("Mit einem Bmi von: " + (int)bmi + " Haben Sie: "+ bmiKategorie);
+            ausgabe();
+            return bmiKategorie;
         }
 
     }
 
 
+    public void ausgabe()
+    {
+        System.out.println("Mit einem Bmi von: " + (int)bmi + " Haben Sie: "+ bmiKategorie);
+    }
 }
