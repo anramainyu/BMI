@@ -12,11 +12,13 @@ public class Main
         steuer1.ioGewicht();
         steuer1.ioGroesse();
         //BMI berechnen
-        Berechnung bmi = new Berechnung(steuer1.getGewicht(),steuer1.getGroesse());
-        bmi.bmiBerechnen();
+        Bmi Bmi = new Bmi(steuer1.getGewicht(),steuer1.getGroesse());
+        Bmi.bmiBerechnen();
         //BMI Ausgeben
-        steuer1.bmiUserAusgabe(bmi.getBmi());
 
+        Bmi.kategorie();
+        steuer1.setBmiKategorie(Bmi.getBmiKategorie());
+        steuer1.bmiUserAusgabe(Bmi.getBmi());
 
     }
 }

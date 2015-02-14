@@ -9,6 +9,7 @@ public class IOSteuerung
 {
     double groesse;
     double gewicht;
+    String bmiKategorie;
 
     // Eingaben
 
@@ -18,7 +19,7 @@ public class IOSteuerung
 
     public void bmiUserAusgabe(double bmi)
     {
-        System.out.println("Der Bmi liegt bei: "+bmi);
+        System.out.println("Der Bmi liegt bei: "+ (int) bmi + " und Sie haben: "+ bmiKategorie);
     }
 
     public void ausgabeGewichtInfo()
@@ -83,5 +84,9 @@ public class IOSteuerung
 
     public double getGewicht() {
         return gewicht;
+    }
+
+    public void setBmiKategorie(String bmiKategorie) {
+        this.bmiKategorie = bmiKategorie;
     }
 }
